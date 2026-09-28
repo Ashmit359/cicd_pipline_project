@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: production
+data:
+  PORT: "3000"
+  DB_HOST: "REPLACE_WITH_RDS_ENDPOINT"
+  DB_PORT: "5432"
+  DB_NAME: "appdb"
+  DB_SSL: "true"
+  APP_VERSION: "1.0.0"
